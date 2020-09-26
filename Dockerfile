@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ENV TS_VERSION=3.11.0
+ENV TS_VERSION=3.12.1
 
 RUN apt-get update && \
     apt-get install wget -yqq && \
