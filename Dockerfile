@@ -3,8 +3,7 @@ FROM ubuntu:latest
 ENV TS_VERSION=3.13.7
 
 RUN apt-get update && \
-    apt-get install wget -yqq && \
-    apt-get install netcat -yqq && \
+    apt-get install netcat bzip2 wget -yqq && \
     wget -O /tmp/teamspeak3.tar.bz2 https://files.teamspeak-services.com/releases/server/$TS_VERSION/teamspeak3-server_linux_amd64-$TS_VERSION.tar.bz2 && \
     tar -xf /tmp/teamspeak3.tar.bz2 && \
     rm -f /tmp/teamspeak3.tar.bz2 && \
